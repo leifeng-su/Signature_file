@@ -2,7 +2,14 @@
 <?php include 'function.php';?>
 <?php
 header("Content-type: image/JPEG");
-$im = imagecreatefromjpeg("xhxh.jpg"); 
+//判断mode使用不同图片
+$mode = $_GET["mode"];
+switch($mode)
+{
+  case "1":$im = imagecreatefromjpeg("xhxh.jpg");break;
+  case "2":$im = imagecreatefromjpeg("qmd.jpg");break;
+  default:$im = imagecreatefromjpeg("xhxh.jpg");break;
+}
 $ip = $_SERVER["REMOTE_ADDR"];
 $weekarray=array("日","一","二","三","四","五","六"); //先定义一个数组
 $get=$_GET["s"];
@@ -28,6 +35,7 @@ $city = $data['data']['city'];
 //定义颜色
 $black = ImageColorAllocate($im, 0,0,0);//定义黑色的值
 $red = ImageColorAllocate($im, 255,0,0);//红色
+$blue = ImageColorAllocate($im, 0,0,255);
 $font = 'msyh.ttf';//加载字体
 //输出
 imagettftext($im, 16, 0, 10, 40, $red, $font,'欢迎您来自'.$country.'-'.$region.'-'.$city.'的朋友');
@@ -36,7 +44,24 @@ imagettftext($im, 16, 0, 10, 104, $red, $font,'您的IP是:'.$ip);//ip
 imagettftext($im, 16, 0, 10, 140, $red, $font,'您使用的是'.$os.'操作系统');
 imagettftext($im, 16, 0, 10, 175, $red, $font,'您使用的是'.$bro.'浏览器');
 imagettftext($im, 14, 0, 10, 200, $black, $font,$get); 
-//imagettftext($im, 15, 0, 10, 200, $red, $font,'被偷窥'.$counter.'次'); 
+imagettftext($im, 15, 0, 10, 200, $red, $font,'这里一共来访了'.$counter.'次'); 
+if($mode == "2"){   //新模式
+  $lg = $_GET["lg"]; //获取参数
+  $gh = $_GET["gh"];
+  $qq = $_GET["qq"];
+  $mail = $_GET["mail"];
+  $stren = $_GET["str"];
+  $strsize = $_GET["strsize"];
+  if($strsize == NULL) {
+    $strsize = 18;
+  }
+  //$strde = base64_decode($stren); //base64存放
+  imagettftext($im, 20, 0, 595, 34, $black, $font,''.$lg.'');
+  imagettftext($im, 20, 0, 595, 75, $black, $font,''.$gh.'');
+  imagettftext($im, 20, 0, 595, 120, $black, $font,''.$qq.'');
+  imagettftext($im, 20, 0, 595, 163, $black, $font,''.$mail.'');
+  imagettftext($im, $strsize, 0, 545, 197, $blue, $font,''.$stren.''); 
+}
 ImageGif($im);
 ImageDestroy($im);
 ?>
