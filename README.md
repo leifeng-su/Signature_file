@@ -1,4 +1,5 @@
 # IP签名档Mod
+做好的 [API](http://ipcounter.ihcr.top)
 逛github的时候看见@xhboke的源码，又恰巧洛谷兴起了一阵计数器潮，为了更好的展（zhuang）示（bi）自己，特将源代码fork一份，添加模式2.
 ![这是实例](http://ipcounter.ihcr.top/?mode=2&mail=abc1763613206@163.com&str=%E5%8D%9A%E8%A7%88%E4%B9%90%E5%AD%A6%EF%BC%8C%E6%95%A2%E4%BA%8E%E6%8E%A2%E7%B4%A2%E3%80%82&qq=1817532680&gh=abc1763613206&lg=%E6%9F%90%E4%BA%BA&strsize=18)
 ## 调教方法
