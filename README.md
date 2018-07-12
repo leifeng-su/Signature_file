@@ -1,3 +1,21 @@
+# IP签名档Mod
+逛github的时候看见@xhboke的源码，又恰巧洛谷兴起了一阵计数器潮，为了更好的展（zhuang）示（bi）自己，特将源代码fork一份，添加模式2.
+![这是实例](http://ipcounter.ihcr.top/?mode=2&mail=abc1763613206@163.com&str=%E5%8D%9A%E8%A7%88%E4%B9%90%E5%AD%A6%EF%BC%8C%E6%95%A2%E4%BA%8E%E6%8E%A2%E7%B4%A2%E3%80%82&qq=1817532680&gh=abc1763613206&lg=%E6%9F%90%E4%BA%BA&strsize=18)
+## 调教方法
+实际上都写在index.php里了
+
+```
+mode：1或不填：原作模式。2：魔改模式
+lg：洛谷用户名
+gh：Github用户名
+qq：QQ号
+mail：邮箱
+str：最下方留言（strsize：大小）
+```
+调教愉快！
+诚邀dalao来写个生成器！
+
+### 以下为原作的介绍~
 # IP签名档源码
 <h2>说在前面</h2>
 自从论坛IP签名档开放以来，访问量达到1806287，一百八十多万，由于证书过期和懒得维护。今特开源。
