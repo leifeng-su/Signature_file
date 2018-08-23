@@ -33,3 +33,15 @@ $url="http://ip.taobao.com/service/getIpInfo.php?ip=".$ip; <br>
 $country = $data['data']['country']; <br>
 $region = $data['data']['region']; <br>
 $city = $data['data']['city'];<br>
+
+
+
+
+
+-----
+### 以下为个人更新
+# 使用方法
+这东西得挂在一个网站上用才行，安利一个本地搭建网站的软件 **WAMPSERVER**
+搭建教程:  https://www.cnblogs.com/simuhunluo/p/6700734.html
+其他注意事项:  https://blog.csdn.net/zztingfeng/article/details/80155624
+之后的用完后更新
