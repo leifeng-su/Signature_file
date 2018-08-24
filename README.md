@@ -1,3 +1,6 @@
+# 原帖如下
+
+
 # IP签名档Mod
 做好的 [API](http://ipcounter.ihcr.top)
 逛github的时候看见@xhboke的源码，又恰巧洛谷兴起了一阵计数器潮，为了更好的展（zhuang）示（bi）自己，特将源代码fork一份，添加模式2.
@@ -50,3 +53,8 @@ $city = $data['data']['city'];<br>
 
 # 更新 
 玩不来，咕了。
+
+# 再次更新
+后经过仔细查看其他博客后，发现了正确运行php文件的方法，但是我没有服务器呀，所以贴出本地效果图
+!()[https://raw.githubusercontent.com/leifeng-su/Signature_file/master/%E4%B8%8B%E8%BD%BD.jpg]
+因为某些原因，浏览器后面被图片盖了，懒得改了，就这样吧
