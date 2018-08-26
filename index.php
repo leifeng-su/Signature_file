@@ -7,8 +7,8 @@ $mode = $_GET["mode"];
 switch($mode)
 {
   case "1":$im = imagecreatefromjpeg("xhxh.jpg");break;
-  case "2":$im = imagecreatefromjpeg("qmd.jpg");break;
-  default:$im = imagecreatefromjpeg("封兽鵺.jpg");break;
+  case "2":$im = imagecreatefromjpeg("nue.jpg");break;
+  default:$im = imagecreatefromjpeg("nue.jpg");break;
 }
 $ip = $_SERVER["REMOTE_ADDR"];
 $weekarray=array("日","一","二","三","四","五","六"); //先定义一个数组
